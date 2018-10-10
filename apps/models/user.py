@@ -16,3 +16,6 @@ class User(AbstractUser):
 
 class UserProfile(models.Model):
     name = models.CharField(blank=False, max_length=254)
+    
+    def __str__(self):
+        return '%s' % (self.name)
