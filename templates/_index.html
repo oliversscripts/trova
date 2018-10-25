@@ -16,18 +16,25 @@
   
   <!-- CSS -->
   <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/fontawesome/css/fontawesome.min.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
   
   <title>{% block title %}{% endblock %}</title>
 </head>
 
 <body>
-  <!-- Body Block -->
-  {% block body %}
-  {% endblock %}  
+  <!-- Nav -->
+  {% include '_navbar.html' %}
+
+  <!-- Content -->
+  {% block body %}{% endblock %}
   
   <!-- JavaScript -->
   <script src="{% static 'vendor/jquery/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'vendor/popper/popper.min.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+  
 </body>
 
 </html>

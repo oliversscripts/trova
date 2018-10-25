@@ -7,6 +7,6 @@ from apps.views import *
 
 
 urlpatterns = [
-    # url(r'^$', views.Index, name='index'),
-    # path('apps/', views.Home, name='home'),
+    url(r'^$', Index, name='index'),
+    path('apps/', Home, name='home'),
 ]
