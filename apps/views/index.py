@@ -7,7 +7,7 @@ from apps.views import *
 
 
 def Index(request):
-    return HttpResponseRedirect(reverse('apps:home'))
+    return HttpResponseRedirect(reverse('home'))
 
 
 def Home(request):
