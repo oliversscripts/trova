@@ -16,6 +16,14 @@ class User(AbstractUser):
 
 class UserProfile(models.Model):
     name = models.CharField(blank=False, max_length=254)
+    manager = models.BooleanField(default=False)
+    admin = models.BooleanField(default=False)
     
     def __str__(self):
         return '%s' % (self.name)
+
+    def is_admin(self):
+        return self.admin
+    
+    def is_manager(self):
+        return self.manager

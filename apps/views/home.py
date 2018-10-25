@@ -12,4 +12,4 @@ def Index(request):
 
 def Home(request):
     context = {}
-    return render(request, 'home.html', context=context)
+    return render(request, 'home.default.html', context=context)
