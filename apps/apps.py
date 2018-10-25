@@ -1,4 +1,4 @@
-from django.apps import AppConfig
+from apps.trova import *
 
 
 class AppsConfig(AppConfig):

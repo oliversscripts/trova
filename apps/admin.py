@@ -1,5 +1,3 @@
-from django.contrib import admin
-
 from apps.trova import *
 
 from apps.forms import *
@@ -8,5 +6,12 @@ from apps.models import *
 from apps.views import *
 
 
+# Config
+admin.site.register(ConfigWebService)
+
+# Users & Profiles
 admin.site.register(User)
 admin.site.register(UserProfile)
+
+# TV Data
+admin.site.register(TvShow)

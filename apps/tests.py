@@ -1,3 +1,3 @@
-from django.test import TestCase
+from apps.trova import *
 
 # Create your tests here.

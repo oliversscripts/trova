@@ -6,7 +6,7 @@ from apps.models import *
 from apps.views import *
 
 
-class ConfigWebServices(models.Model):
+class ConfigWebService(models.Model):
     # Trakt
     api_key_trakt_username = models.CharField('Trakt API Username', blank=True, max_length=254)
     api_key_trakt_client_id = models.CharField('Trakt API Client ID', blank=True, max_length=254)
