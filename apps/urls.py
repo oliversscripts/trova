@@ -7,6 +7,6 @@ from apps.views import *
 
 
 urlpatterns = [
-    url(r'^$', IndexView, name='index'),
-    path('apps/', HomeView, name='home'),
+    url(r'^$', IndexView, name='IndexView'),
+    path('apps/', HomeView, name='HomeView'),
 ]
