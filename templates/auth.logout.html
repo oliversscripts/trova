@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/auth.css' %}">
+    
+    <title>Trova - Logout</title>
+</head>
+
+<body class="text-center">
+    <!-- Logout -->
+    <form class="form-signin">
+        <img class="mb-4" src="{% static 'images/trova_logo.png' %}" style="width:200px;" alt="Trova Logo">
+        <h1 class="h5 mb-3 font-weight-normal">You Have Been Logged Out</h1>
+        
+        <a class="btn btn-light btn-block" href="/login/" role="button">Return to Login</a>
+    </form>
+    
+    <!-- JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    
+</body>
+
+</html>
