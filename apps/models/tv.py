@@ -6,7 +6,7 @@ from apps.models import *
 from apps.views import *
 
 
-class TvShow(models.Model):
+class TvShowModel(models.Model):
     tvdb_id = models.IntegerField('TVDB Id', primary_key=True)
     sonarr_id = models.IntegerField('Sonarr Id', unique=True)
 

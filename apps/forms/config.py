@@ -6,7 +6,7 @@ from apps.models import *
 from apps.views import *
 
 
-urlpatterns = [
-    url(r'^$', IndexView, name='index'),
-    path('apps/', HomeView, name='home'),
-]
+class ConfigWebServiceForm(ModelForm):
+    class Meta:
+        model = ConfigWebServiceModel
+        fields = '__all__'

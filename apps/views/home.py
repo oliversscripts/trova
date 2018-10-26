@@ -7,11 +7,11 @@ from apps.views import *
 
 
 @login_required
-def Index(request):
+def IndexView(request):
     return HttpResponseRedirect(reverse('home'))
 
 
 @login_required
-def Home(request):
+def HomeView(request):
     context = {}
     return render(request, 'home.default.html', context=context)

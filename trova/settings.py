@@ -125,7 +125,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = 'apps.User'
+AUTH_USER_MODEL = 'apps.UserModel'
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/apps/'

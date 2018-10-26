@@ -7,11 +7,11 @@ from apps.views import *
 
 
 # Config
-admin.site.register(ConfigWebService)
+admin.site.register(ConfigWebServiceModel)
 
 # Users & Profiles
-admin.site.register(User)
-admin.site.register(UserProfile)
+admin.site.register(UserModel)
+admin.site.register(UserProfileModel)
 
 # TV Data
-admin.site.register(TvShow)
+admin.site.register(TvShowModel)
